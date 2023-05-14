@@ -9,7 +9,7 @@ describe('test suite', () => {
     it('should route to the url', () =>{
             cy.intercept('http://localhost:4000/graphql').as('response')
             cy.get('@ThursdayBtn').should('exist')
-            // cy.wait('@response')
+            
         })
     })
     context
