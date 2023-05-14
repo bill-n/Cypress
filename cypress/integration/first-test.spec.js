@@ -1,11 +1,10 @@
 describe('landing page', () => {
-    // some_text = 'SIGN UP TODAY'
+    let test = 'hello'
     beforeEach('route to base url', () => {
         cy.visit('/')
-        cy.viewport(1200,720)
+        cy.viewport(1100,720)
     })
-    it('should navigate to our story', () => {
-        cy.get('.nav-link').contains('Our story').click()
+    it('find the search button', () => {
+        cy.get('.search').type(`${test}`)
     })
-
 })
