@@ -4,6 +4,7 @@ describe('test suite', () => {
         cy.url().should('include','/sessions')
         cy.viewport('macbook-16')
         cy.get('[data-test=Thursday]').as('ThursdayBtn')
+        cy.get('[data-test=Friday]').as('FridayBtn')
     })
     context('route url', () => {
     it('should route to the url', () =>{
