@@ -5,7 +5,7 @@ describe('test suite', () => {
         cy.viewport('macbook-16')
         cy.get('[data-test=allsession]').as('SessionBtn')
         cy.get('[data-test=Thursday]').as('ThursdayBtn')
-        cy.get('[data-test=Friday]').as('FridayBtn')
+        cy.get('[data-test=Friday]')
   
     })
     context('route url', () => {
