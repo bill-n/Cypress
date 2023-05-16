@@ -6,7 +6,7 @@ describe('test suite', () => {
         cy.get('[data-test=allsession]').as('SessionBtn')
         cy.get('[data-test=Thursday]').as('ThursdayBtn')
         cy.get('[data-test=Friday]').as('FridayBtn')
-        cy.get('[data-test=Wednesday]').as('WednesdayBtn')
+  
     })
     context('route url', () => {
     it('should route to the url', () =>{
