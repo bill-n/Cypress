@@ -11,7 +11,6 @@ describe('test suite', () => {
         })
     }) 
     context('start test', () => {
-        it('should route to the url', () =>{
-            cy.intercept('http://localhost:4000/graphql').as('response')
+    
          
 })
