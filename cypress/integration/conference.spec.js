@@ -5,10 +5,15 @@ describe('test suite', () => {
         cy.viewport('macbook-16')
         
     })
-  
-    it('should route to the page', () => {
-        cy.intercept('/graphql',{statusCode:201}).as('backend')
-        cy.get('[data-test=Thursday]').should('exist').click()
-        cy.wait('@backend')
+    afterEach('collapse everything', () => {
+        cy.viewport('iphone-x')
     })
+    context('Thursday Button', () => {
+        it('should route to the page', () => {
+            cy.intercept('/graphql',{statusCode:201}).as('backend')
+            cy.get('[data-test=Thursday]').should('exist').click()
+            cy.wait('@backend')
+        })
+    })
+    
 })
