@@ -7,6 +7,8 @@ describe('test suite', () => {
     })
   
     it('should route to the page', () => {
+        cy.intercept('http://localhost:4000/graphql').as('backend')
         cy.get('[data-test=Thursday]').should('exist').click()
+        
     })
 })
