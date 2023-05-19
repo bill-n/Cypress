@@ -15,6 +15,7 @@ describe('test suite', () => {
             cy.get('[data-test=Thursday]').should('exist').click()
             cy.wait(['@backend'])
             cy.get('@backend').should('exist')
+            cy.dt('Thursday').should('exist')
         })
     })
 })
