@@ -10,9 +10,10 @@ describe('test suite', () => {
     })
     context('Thursday Button', () => {
         it('should route to the page', () => {
-            cy.intercept('POST','/graphql',{fixture: 'example.json'}).as('backend')
+            cy.intercept('POST','/graphql',{fixture: 'example'}).as('backend')
+            cy.intercept('POST','/messages',{fixture: 'example'}).as('messages')
             cy.get('[data-test=Thursday]').should('exist').click()
-            cy.wait('@backend')
+            cy.wait(['@backend'])
         })
     })
     
