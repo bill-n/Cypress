@@ -10,7 +10,7 @@ describe('test suite', () => {
     })
     context('Thursday Button', () => {
         it('should route to the page', () => {
-            cy.intercept('/graphql',{statusCode:201}).as('backend')
+            cy.intercept('/graphql',{fixture: 'activities.json'}).as('backend')
             cy.get('[data-test=Thursday]').should('exist').click()
             cy.wait('@backend')
         })
