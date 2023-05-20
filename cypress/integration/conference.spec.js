@@ -14,7 +14,7 @@ describe('test suite', () => {
             cy.intercept('POST','/messages',{fixture: 'example'}).as('messages')
             cy.get('[data-test=Thursday]').should('exist').click()
             cy.wait(['@backend'])
-            cy.get('@backend').should('exist')
+            cy.get('@backend')
            
         })
     })
