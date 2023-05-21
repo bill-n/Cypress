@@ -10,9 +10,7 @@ describe('test suite', () => {
     })
     context('Thursday Button', () => {
         it('should route to the page', () => {
-            cy.intercept('POST','/graphql',{fixture: 'example'}).as('backend')
-            
-            
+            cy.intercept('POST','/graphql',{fixture: 'example'}).as('backend')  
         })
     })
 })
