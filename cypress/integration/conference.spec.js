@@ -7,8 +7,6 @@ describe('test suite', () => {
     })
     
     context('Thursday Button', () => {
-        it('should route to the page', () => {
-            
-        })
+        
     })
 })
