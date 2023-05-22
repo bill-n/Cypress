@@ -6,7 +6,5 @@ describe('test suite', () => {
         
     })
     
-    context('Thursday Button', () => {
-        
-    })
+    
 })
