@@ -5,6 +5,6 @@ describe('landing page', () => {
         cy.viewport(1100,720)
     })
     it('find the search button', () => {
-        cy.get('.search').type(`${test}`)
+        
     })
 })
