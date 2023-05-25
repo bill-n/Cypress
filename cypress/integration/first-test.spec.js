@@ -11,8 +11,5 @@ describe('describe block', () => {
         cy.get("li").should('exist').click()
         cy.get("[input-type=text]").type('username')
         })
-        
-        
     })
-
 })
