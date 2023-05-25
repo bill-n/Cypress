@@ -8,7 +8,6 @@ describe('describe block', () => {
     })
     context('testing buttons on the UI', () => {
         it('should check for login functionality', () => {
-        
         cy.get("li").should('exist').click()
         cy.get("[input-type=text]").type('username')
         })
