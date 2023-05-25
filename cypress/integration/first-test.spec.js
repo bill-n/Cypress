@@ -9,6 +9,7 @@ describe('describe block', () => {
     context('testing buttons on the UI', () => {
         cy.get("li").should('exist')
         cy.get("li").should('exist').click()
+        cy.get("[input-type=text]").type('username')
     })
 
 })
