@@ -7,7 +7,7 @@ describe('describe block', () => {
         })
     })
     context('testing buttons on the UI', () => {
-        
+        cy.get("li").should('exist')
     })
 
 })
