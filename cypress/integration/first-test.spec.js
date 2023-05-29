@@ -7,9 +7,6 @@ describe('describe block', () => {
         })
     })
     context('testing buttons on the UI', () => {
-        it('should check for login functionality', () => {
-        
-        
-        })
+       
     })
 })
