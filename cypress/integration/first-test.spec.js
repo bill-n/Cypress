@@ -6,7 +6,5 @@ describe('describe block', () => {
             cy.url().should('include','/users')
         })
     })
-    context('testing buttons on the UI', () => {
-       
-    })
+   
 })
