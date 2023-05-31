@@ -149,6 +149,14 @@ export function Sessions() {
               className="btn-oval"
               
             >
+            <button
+              type="button"
+              onClick={() => setDay("Tuesday")}
+              className="btn-oval"
+              data-test='Tuesday'
+            >
+              Thursday
+            </button>
               Wednesday
             </button>
             <button
